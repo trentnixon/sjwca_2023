@@ -1,3 +1,4 @@
+import { HeroContentLeft } from "@/components/layout/Hero";
 import { createGetInitialProps } from "@mantine/next";
 import Document, { Head, Html, Main, NextScript } from "next/document";
 

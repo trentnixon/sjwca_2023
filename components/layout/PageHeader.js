@@ -183,7 +183,7 @@ export function HeaderMiddle() {
 
 
   return (
-    <Header height={56} mb={120}>
+    <Header height={56} mb={0}>
       <Container className={classes.inner}>
         <Burger opened={opened} onClick={toggle} size="sm" className={classes.burger} />
         <Group className={classes.links} spacing={5}>

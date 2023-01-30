@@ -1,5 +1,7 @@
 // Components
+import { HeroContentLeft } from "@/components/layout/Hero";
 import { HeaderMiddle } from "@/components/layout/PageHeader";
+import { Container } from "@mantine/core";
 import Meta from "./Meta";
 
 //import { useRouter } from "next/router";
@@ -15,9 +17,11 @@ const Layout = ({ children }) => {
     <>
       <Meta />
       <HeaderMiddle />
-      <div className="Container">
+      <HeroContentLeft />
+      <Container size={'xl'}>
       <main>{children}</main>
-      </div>
+      </Container>
+     
     </>
   );
 };
