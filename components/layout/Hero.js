@@ -80,8 +80,7 @@ export function HeroContentLeft() {
       />
       <Container className={classes.container}>
         <Title className={classes.title}>SYDNEY JUNIOR WINTER CRICKET</Title>
-        <Text className={classes.description} size="xl" mt="xl">
-          Sydney's Longest Running Junior Winter Cricket Competition!
+        <Text className={classes.description} size="xl" mt="xl">Sydneys Longest Running Junior Winter Cricket Competition!
           REGISTRATIONS OPENING SOON FOR 2023
         </Text>
 

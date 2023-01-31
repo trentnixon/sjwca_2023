@@ -1,4 +1,5 @@
 // Components
+import { FooterLinks } from "@/components/layout/Footer";
 import { HeroContentLeft } from "@/components/layout/Hero";
 import { HeaderMiddle } from "@/components/layout/PageHeader";
 import { Container } from "@mantine/core";
@@ -21,7 +22,7 @@ const Layout = ({ children }) => {
       <Container size={'xl'}>
       <main>{children}</main>
       </Container>
-     
+      <FooterLinks />
     </>
   );
 };

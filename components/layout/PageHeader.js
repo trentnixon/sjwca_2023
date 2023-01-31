@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import { useRouter } from 'next/router';
+
 import { useState } from 'react';
 import { createStyles, Header, Group, ActionIcon, Container, Burger } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
@@ -166,19 +169,23 @@ export function HeaderMiddle() {
 
   const CreateLinks = (LINKS)=>{
    
-    return LINKS.map((url) => (
-      <a
-        key={url.label}
-        href={url.url}
-        className={cx(classes.url, { [classes.linkActive]: active === url.url })}
-        onClick={(event) => {
-          event.preventDefault();
-          setActive(url.url);
-        }}
-      >
-        {url.label}
-      </a>
-    ))
+    return LINKS.map((url,i) =>{
+
+        return <Link href={url.url} key={i} >
+           {url.label}
+       {/*  <a
+          key={url.label}
+          href={url.url}
+          className={cx(classes.url, { [classes.linkActive]: active === url.url })}
+          onClick={(event) => {
+            event.preventDefault();
+            setActive(url.url);
+          }}
+        >
+         
+        </a> */}
+        </Link>
+    })
   }
 
 
